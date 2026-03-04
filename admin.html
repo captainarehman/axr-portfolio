@@ -663,9 +663,8 @@ function savePassword(){
 // ════════════════════════════════════
 let sb = null;
 function initSB(){
-  if(SB_URL==='https://cpswdaumiidzfehufrja.supabase.co') return;
   const {createClient} = supabase;
-  sb = createClient(SB_URL,SB_KEY);
+  sb = createClient(SB_URL, SB_KEY);
 }
 initSB();
 
