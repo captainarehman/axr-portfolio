@@ -741,8 +741,8 @@ section {
 // ════════════════════════════════════
 // SUPABASE CONFIG  ← fill these in
 // ════════════════════════════════════
-const SB_URL = 'YOUR_SUPABASE_URL';
-const SB_KEY = 'YOUR_SUPABASE_ANON_KEY';
+const SB_URL = 'https://tunwnduqnnbmhuaupebw.supabase.co';
+const SB_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR1bnduZHVxbm5ibWh1YXVwZWJ3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzI2MTA0NzUsImV4cCI6MjA4ODE4NjQ3NX0.Ed8H7G3x_a3Vn7uHbsBStC4zsYSu-z3W4Xay2Y7w760';
 
 // ════════════════════════════════════
 // DEFAULT DATA
@@ -784,7 +784,7 @@ let D = JSON.parse(JSON.stringify(DEF));
 // SUPABASE INIT
 // ════════════════════════════════════
 let sb = null;
-if (SB_URL !== 'YOUR_SUPABASE_URL') {
+if (SB_URL !== 'https://tunwnduqnnbmhuaupebw.supabase.co') {
   const { createClient } = supabase;
   sb = createClient(SB_URL, SB_KEY);
   loadRemote();
