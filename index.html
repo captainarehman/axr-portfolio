@@ -741,8 +741,8 @@ section {
 // ════════════════════════════════════
 // SUPABASE CONFIG  ← fill these in
 // ════════════════════════════════════
-const SB_URL = 'https://hulicizebphbdpumkbxt.supabase.co';
-const SB_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imh1bGljaXplYnBoYmRwdW1rYnh0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzI2MDU5MDksImV4cCI6MjA4ODE4MTkwOX0.7O8Xm_DQEnA5EScr7M1TRMj43vQdMYny36yBK93JcRo';
+const SB_URL = 'https://cpswdaumiidzfehufrja.supabase.co';
+const SB_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNwc3dkYXVtaWlkemZlaHVmcmphIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzI2MDkzNDgsImV4cCI6MjA4ODE4NTM0OH0.wCqPNwUPpaFvwsdNT9DZbk5l4EnDTR8lxZZWxi4WTJQ';
 
 // ════════════════════════════════════
 // DEFAULT DATA
@@ -784,7 +784,7 @@ let D = JSON.parse(JSON.stringify(DEF));
 // SUPABASE INIT
 // ════════════════════════════════════
 let sb = null;
-if (SB_URL !== 'https://hulicizebphbdpumkbxt.supabase.co') {
+if (SB_URL !== 'https://cpswdaumiidzfehufrja.supabase.co') {
   const { createClient } = supabase;
   sb = createClient(SB_URL, SB_KEY);
   loadRemote();
