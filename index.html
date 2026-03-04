@@ -784,13 +784,8 @@ let D = JSON.parse(JSON.stringify(DEF));
 // SUPABASE INIT
 // ════════════════════════════════════
 let sb = null;
-if (SB_URL !== 'https://cpswdaumiidzfehufrja.supabase.co') {
-  const { createClient } = supabase;
-  sb = createClient(SB_URL, SB_KEY);
-  loadRemote();
-} else {
-  render(D);
-}
+sb = createClient(SB_URL, SB_KEY);
+loadRemote();
 
 async function loadRemote() {
   try {
