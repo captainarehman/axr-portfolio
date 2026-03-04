@@ -611,8 +611,8 @@ input[type=range]::-webkit-slider-thumb{
 // ════════════════════════════════════
 // CONFIG — MUST FILL IN
 // ════════════════════════════════════
-const SB_URL = 'https://hulicizebphbdpumkbxt.supabase.co';
-const SB_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imh1bGljaXplYnBoYmRwdW1rYnh0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzI2MDU5MDksImV4cCI6MjA4ODE4MTkwOX0.7O8Xm_DQEnA5EScr7M1TRMj43vQdMYny36yBK93JcRo';
+const SB_URL = 'https://cpswdaumiidzfehufrja.supabase.co';
+const SB_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNwc3dkYXVtaWlkemZlaHVmcmphIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzI2MDkzNDgsImV4cCI6MjA4ODE4NTM0OH0.wCqPNwUPpaFvwsdNT9DZbk5l4EnDTR8lxZZWxi4WTJQ';
 const ADMIN_PASSWORD_KEY = 'axr_admin_pw';
 const DEFAULT_PASSWORD = 'axr2025';
 
@@ -663,7 +663,7 @@ function savePassword(){
 // ════════════════════════════════════
 let sb = null;
 function initSB(){
-  if(SB_URL==='https://hulicizebphbdpumkbxt.supabase.co') return;
+  if(SB_URL==='https://cpswdaumiidzfehufrja.supabase.co') return;
   const {createClient} = supabase;
   sb = createClient(SB_URL,SB_KEY);
 }
@@ -1041,7 +1041,7 @@ async function savePage(key){
   if(ok){
     showToast(`✓ ${key.charAt(0).toUpperCase()+key.slice(1)} saved!`,'ok');
     statusIds.forEach(id=>{ const el=document.getElementById(id); if(el) el.textContent=''; });
-  } else if(SB_URL==='https://hulicizebphbdpumkbxt.supabase.co'){
+  } else if(SB_URL==='https://cpswdaumiidzfehufrja.supabase.co'){
     showToast('⚠ Configure Supabase in SETUP.md to save live','err');
   }
 }
